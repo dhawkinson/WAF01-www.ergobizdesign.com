@@ -50,6 +50,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Doug Hawkinson" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -209,12 +214,20 @@
       <updated>1468375789516</updated>
       <workItem from="1468375790685" duration="104000" />
       <workItem from="1468375895849" duration="28659000" />
-      <workItem from="1468860402898" duration="43000" />
+      <workItem from="1468860402898" duration="192000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Load">
+      <created>1468860580739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468860580739</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28806000" />
+    <option name="totallyTimeSpent" value="28955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1400" height="718" extended-state="0" />
@@ -249,6 +262,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Load" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Load" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
