@@ -37,7 +37,7 @@ CONFERENCE/CONTEMPORARY
       If you don’t see what you’re looking for, please contact us.  We have other options for your consideration, 
       and often items are built as ordered. 
       
-      Picture and text content.
+      Picture and text content. Easily updateable.
       
 CONTACT US
       Provide the means for the various ways of contacting us.
