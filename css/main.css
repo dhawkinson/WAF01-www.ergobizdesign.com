@@ -103,6 +103,10 @@ a, p {
     width: 100%;
 }
 
+.backgroundControl {
+    background-color: #A2ADA6;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -114,9 +118,9 @@ a, p {
     padding: 0;
 }
 
-.chair {
+/*.chair {
     padding-top: .5%;
-}
+}*/
 
 .accentline {
     width: 100%;
@@ -126,6 +130,7 @@ a, p {
 .divider {
     width: 100%;
     height: auto;
+    padding: 0 auto;
 }
 
 #navbar {
@@ -171,6 +176,10 @@ a, p {
     position: absolute;
     top: 30%;
     margin: 0 10%;
+}
+
+#home {
+    position: relative;
 }
 
 .img01 {

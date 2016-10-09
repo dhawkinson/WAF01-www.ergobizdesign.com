@@ -1,0 +1,113 @@
+/**********************************************
+    flexbox Structure - Primary (Vertical, Top to bottom)
+***********************************************/
+
+#header { /*  the site container */
+    display: flex; /*  block display (100% of available)   */
+    flex-direction: row; /*  vertical main axis  */
+    flex-wrap: wrap; /*  no wrapping of columns  */
+    justify-content: space-around; /*  equal spacing around  content items */
+    align-items: center;
+    align-content: center;
+}
+
+#branding { /*  branding container */
+    flex: none;
+}
+
+#content { /*  content container   */
+    display: flex; /*  block display (100% of available)   */
+    flex-direction: column; /*  vertical main axis  */
+    flex-wrap: nowrap; /*  no wrapping of columns  */
+    justify-content: space-around; /*  equal spacing around  content items */
+    align-items: center;
+    align-content: center;
+}
+
+#home, /* home page container */
+#about, /* about page container */
+#inventory, /* inventory page container */
+#contact, /* contact page container */
+#foot { /* foot container (page quote and copyright) */
+    flex: none;
+}
+
+/**********************************************
+    flexbox Structure - Branding
+***********************************************/
+
+#branding {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.chair,
+.accentLine,
+.tagline,
+.divider {
+    flex: none;
+    text-align: center;
+}
+
+/**********************************************
+    flexbox Structure - Navigation
+***********************************************/
+
+/*#navBar {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.navItem {
+    flex: none;
+}*/
+
+/**********************************************
+    flexbox Structure - Home "page"
+***********************************************/
+
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+.homeItem {
+    flex: none;
+    margin: 0 10px;
+}
+
+/**********************************************
+    flexbox Structure - Footer
+***********************************************/
+
+.foot {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright,
+.credits {
+    flex: 0 1 auto;
+}
+
+.credits {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.author,
+.annotation {
+    flex: 0 1 auto;
+}
