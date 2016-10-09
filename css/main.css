@@ -9,280 +9,259 @@ body {
     margin: 0;
     padding: 0;
     max-width: 1600px;
-    color: #1B0956;
 }
-
-/*************************************************************
-**************************************************************
-
-    Establish Primary Flexbox Infrastructure - Vertical Axis
-
-**************************************************************
-**************************************************************/
-
-.pageContainer {                        /*  the document body */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-}
-
-.headContainer,                         /* identification and navigation */
-.mainContainer,                         /* page content */
-.footContainer {                        /* version and copyright */
-    flex: none;
-}
-
 
 /*******************************************
 ********************************************
-
-    Set Font Styles
-
+        Establish colors
 ********************************************
 ********************************************/
 
-.headContainer {
-    font-family:'Droid Sans', sans-serif;
-    font-size: 30%; /* set base font size */
+.litebg-color {
+    background-color: #A2ADA6;
 }
 
-.mainContainer,
-.footContainer {
-    font-family:'Lato', sans-serif;
-    font-size: 30%; /* set base font size */
+.darkbg-color {
+    background-color: #758279;
 }
 
-.tagLine {
-    font-family:'Nobile', sans-serif;
-    font-size: 30%; /* set base font size */
-    font-style: italic;
-    text-align: center;
+.acntbg-color {
+    background-color: #000000;
+}
+
+.border-primary {
+    border: solid 2px #FFFFFF;
+}
+
+.border-secondary {
+    border: solid 1px #000000;
+}
+
+.border-accent {
+    border-top: solid 3px #FFEB3B;
+}
+
+.font-primary {
+    color: #000000;
+}
+
+.font-secondary {
+    color: #FFFFFF
+}
+
+.font-accent {
+    color: #D84315;
+}
+
+.font-selector {
+    color: #BDBDBD;
+}
+
+/*******************************************
+********************************************
+    Set Font Styles
+********************************************
+********************************************/
+
+#header {
+    font-family: 'Exo', sans-serif;
+}
+
+.tagline {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#content {
+    font-family: 'Play', sans-serif;
 }
 
 h1 {
-    font-size: 2.5em;
-}
-
-h2 {
     font-size: 2em;
 }
 
-a,
-p {
-    color: #1B0956;
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
     font-size: 1.5em;
-    line-height: 1.75em;
 }
 
-/*******************************************
-    End of Set Font Styles
-********************************************/
-
-/*******************************************
-    the .bodyContainer
-********************************************/
-
-.pageContainer {
-    color: #2C406D;
-    background: #edf0f8;
-    width: 100%;
-    min-height: 100vh;
+h4 {
+    font-size: 1.25em;
 }
+
+a, p {
+    line-height: 1.25em;
+}
+
 /*********************************************
-**********************************************
-
-    logo, name and nav bar
-
-**********************************************
-**********************************************
-    secondary flex-box structure
+    branding & nav styling
 **********************************************/
 
-.headContainer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: space-around;
-    align-items: center;
-}
-
-.logo,
-.name,
-.nav {
-    flex: none;
-    margin: 0;
-    padding: 0;
-}
-/**********************************************
-    logo, name and nav bar styling
-**********************************************/
-
-.headContainer {
-    background: #1B0956;
+#siteWrapper {
     width: 100%;
-    z-index: 2000;
+}
+
+#header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-    text-align: center;
+.chair {
+    padding-top: .5%;
 }
 
-.logo img {
-    width: 7.5em;
+.accentline {
+    width: 100%;
     height: auto;
 }
 
-.name {
-    color: #18C0C0;
-    text-shadow: 1px 1px 1px  #FFFFFF;
+.divider {
+    width: 100%;
+    height: auto;
+}
+
+#navbar {
+    width: 100%;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     text-align: center;
 }
 
-.nav {
-    text-align: center;
+#navbar ul li {
+    display: inline;
 }
 
-.nav li {
-    display: inline-block;
-    padding-left: .5em;
-    padding-right: .5em;
-}
-
-.nav li .selected {
-    color: #5B80D7;         /* #182E63 (24%), lightened to 60%  */
-}
-
-.nav a {
-    color: #FFFFFF;         /* #182E63 (24%), lightened to 100% (white) */
+#navbar ul li a {
     text-decoration: none;
-    transition: all .5s;
+    padding: 2em 0;
+    width: 25%;
 }
 
-.nav a:hover {
-    color: #D6DFF5;         /* #182E63 (24%), lightened to 90%  */
+.navItem.active {
+    color: #000000;
 }
 
-/**********************************************
-***********************************************
-
-    mainContainer (primary page content)
-
-***********************************************
-***********************************************
-    secondary flex-box structure
-***********************************************/
-
-.mainContainer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    text-align: left;
+.navItem:hover {
+    color: #D84315;
 }
 
-.tagLine,
-.uc,
-.card {
-    flex: none;
+.home,
+.about,
+.inventory {
+    border-right: solid 1px #000000;
 }
 
-/**********************************************
-***********************************************
-
+/*********************************************
     home page
+**********************************************/
 
-***********************************************
-***********************************************/
+#content {
+    position: absolute;
+    top: 30%;
+    margin: 0 10%;
+}
 
-.mainContainer {
-    position: relative;
-    top: 105px
-    width: 100%;
+.img01 {
+    width: 64%;
+    height: 40%;
+    object-position: center;
+    object-fit: cover;
+    margin-right: 1%;
 }
-.tagLine {
-    display: block;
-    width: 100%;
-    margin-top: -5em;
+
+.box01 {
+    width: 35%;
+    height: 35.5%;
+    padding: .5% 1.5%;
+    margin-left: -1.5%;
+    margin-right: -.025%
 }
-.uc {
-    display: block;
-    width: 100%;
+
+.box01.divider {
+    width: 20%;
+}
+
+.box02 {
+    width: 550px;
+    height: 60px;
+    padding-top: .25em;
+    margin-right: 1%;
+    font-size: 200%;
     text-align: center;
 }
-.card {
-    width: 70%;
-    height: 15em;
-    margin-top: 1em;
-    padding: 1em;
-    text-align: left;
-    background: #FFFFFF;
-    border-bottom: 4px solid #A4B5DB;
-    border-radius: 6px;
-    transition: all .5s;
-}
-.card:hover {
-    border-color: #1B0956;
+
+.box03 {
+    width: 185px;
+    height: 60px;
+    padding-top: .25em;
+    margin-right: -.5%;
+    font-size: 200%;
+    text-align: center;
 }
 
-.headShot img {
-    float: left;
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin: 20px 10px;
-    border: 2px solid #A4B5DB;
-    transition: all .5s;
+.img02 {
+    width: 35%;
+    height: 50%;
+    padding: 0;
+    margin-top: -4%;
+    margin-left: -1.5%;
+    margin-right: -.025%;
+    overflow: hidden;
 }
 
-.headShot img:hover {
-    border-color: #1B0956;
-    transition-timing-function: linear;
-    transform: scale(2.5) rotate(5deg);
+.img03 {
+    width: 350px;
+    height: 300px;
+    margin-top: -31.1%;
+    overflow: hidden
 }
 
-.contact li {
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 5em;
-    padding-right: 5em;
+.img04 {
+    width: 35%;
+    height: 35%;
+    margin-top: -14.75%;
+    margin-left: -1.5%;
+    overflow: hidden;
+}
+
+.box04 {
+    width: 35%;
+    height: 10%;
+    padding-top: .25em;
+    margin-left: -1.5%;
+    margin-right: -.025%;
+    text-align: center;
 }
 
 
 /**********************************************
 ***********************************************
-
     footer
-
 ***********************************************
 ***********************************************/
 
 /**********************************************
     secondary flex-box structure
 ***********************************************/
-.footContainer {
-    position: relative;
-    display: inline-flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.author,
-.copyright {
-    flex: none;
-}
 
 /**********************************************
     styling
 ***********************************************/
 
-.footContainer {
+#foot {
     position: relative;
     width: 100%;
 }
@@ -308,100 +287,24 @@ a {
 ********************************************
 ********************************************/
 
+/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    /************************************
-        smaller tablets
-    *************************************
-    *************************************
-        adjust fonts styles
-    *************************************/
-
-    .headContainer,
-    .mainContainer,
-    .footContainer {
-        font-size: 45%;
+    div[class^="col"] {
+        padding: 1px 1px;
     }
-
 }
 
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /************************************
-        larger tablets & smaller laptops
-    *************************************
-    /************************************
-        adjust fonts styles
-    *************************************/
-
-    .headContainer,
-    .mainContainer,
-    .tagLine,
-    .footContainer {
-        font-size: 60%;
+    div[class^="col"] {
+        padding: 2px 2px;
     }
-
-    /************************************
-        adjust secondary flex-box - nav
-    *************************************/
-    .headContainer {
-        display: inline-flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-content: space-around;
-        align-items: center;
-    }
-    .logo,
-    .name,
-    .nav {
-        flex: none;
-    }
-    /************************************
-        adjust spacing for row display
-    *************************************/
-    .logo {
-        text-align: center;
-        padding-left: 1em;
-        width: 20%;
-    }
-    .logo img {
-        width: 10em;
-        height: auto;
-    }
-
-    .name {
-        text-shadow: 2px 2px 2px #FFFFFF;
-        text-align: left;
-        padding-left: 1em;
-        width: 45%;
-
-    }
-    .nav {
-        text-align: right;
-        width: 30%;
-    }
-
-    .mainContainer {
-        position: relative;
-        top: 105px;
-        left: 0;
-    }
-
 }
+
+/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    /************************************
-        larger laptops & desktops
-    *************************************
-    /************************************
-        adjust fonts
-    *************************************/
-
-    .headContainer,
-    .mainContainer,
-    .tagLine,
-    .footContainer {
-        font-size: 75%;
+    div[class^="col"] {
+        padding: 5px 5px;
     }
-
 }
-
-
 
