@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Used Office Furniture | Workstations | Space Planning</title>
+		<title>Used Office Furniture | Workstations | Office Space Planning</title>
         <meta name="keywords" content="used, preowned, office furniture, workstations, cubicles">
         <meta name="keywords" content="chairs, seating, conference table, filing, storage">
         <meta name="keywords" content="ergobizdesign, Seattle, Greater Seattle">
@@ -15,70 +15,192 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Exo%7CPlay%7CUbuntu+Condensed" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body id="siteWrapper" class="backgroundControl">
-		<div id="header" class="backgroundControl">		<!--	the full site	-->
-			<div id="branding">		<!--	the heading bar	-->
-				<div class="chair"><img src="images/office-chair.png" alt="brand"></div>
-				<div class="accentLine"><img src="images/accentLine.png" alt="accent"></div>
+	<body id="home" data-spy="scroll" data-target="#navbar" class="siteWrapper"
+		  style="background-color: var(--hmlt-bkg-color);">
+	<div id="homePage">
+		<div id="header" style="background-color: var(--hmlt-bkg-color);">        <!--	the top	-->
+			<div id="branding">        <!--	the branding bar	-->
+				<div class="chair"><img class="img-responsive" src="images/office-chair.png" alt="brand"></div>
+				<div class="accentLine"><img class="img-responsive" src="images/accentLine.png" alt="accent"></div>
 				<div class="tagline"><h4>Offices that enhance the way you work</h4></div>
-				<div class="divider"><img src="images/dividerSolid.png" alt="divider"></div>
-			</div>		<!--	end heading bar	-->
-			<div id="navbar" class="nav">
-				<ul class="navList">
-					<li class="navItem home font-selector active"><a href="#">Home</a></li>
-					<li class="navItem about font-selector"><a href="#">About</a></li>
-					<li class="navItem inventory font-selector"><a href="#">Current Inventories</a></li>
-					<li class="navItem contact font-selector"><a href="#">Contact</a></li>
+				<div class="divider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
+			</div>        <!--	end branding bar	-->
+			<div id="navBar">        <!--	the nav bar	-->
+				<ul class="nav navbar-nav nav-inline">
+					<li class="active navItem home"><a href="#homePage">Home</a></li>
+					<li class="navItem about"><a href="#about">About</a></li>
+					<li class="navItem inventory"><a href="#inventory">Current Inventories</a></li>
+					<li class="navItem contact"><a href="#contact">Contact</a></li>
 				</ul>
+			</div>        <!--	end nav bar	-->
 			</div>
-		</div>
-		<div id="content">		<!--	the content container	-->
-			<div id="home">		<!--	the home "page"	-->
-				<div class="img01 homeItem"><img class="border-primary img-responsive" src="images/interraC.jpg" alt="fourPax"></div>
-				<div class="box01 homeItem darkbg-color border-primary">
-					<h1><small class="font-secondary">Ergo Business Solutions, Inc.</small></h1>
+		<div id="homeContent" class="content">        <!--	the home "page"	-->
+			<div id="img01h" class="content"><img class="img-responsive" src="images/interraC.jpg" alt="fourPak"></div>
+			<div id="box01h" class="content">
+				<h1>
+					<small>Ergo Business Solutions, Inc.</small>
+				</h1>
 					<p>The design of your office needs to communicate your brand and style while meeting the needs of the people who work there.  We are dedicated to learning how your business functions, then designing a modern office space that works for you.</p>
 					<p>Ergo Business Solutions offers deep discounts on new and used office furniture, complete space planning and installation services, as well as office moves.</p>
 					<p> </p>
 					<p> </p>
 					<p> </p>
-					<img class="divider" src="images/dividerSolid.png" alt="divider">
+				<img class="img-responsive" src="images/dividerSolid.png" alt="divider">
 					<p> </p>
-					<p><a class="font-secondary" href="#"><h4>Learn more ></h4></a></p>
+				<div><h4><a href="#about">Learn more ></a></h4></div>
 				</div>
-				<div class="box02 homeItem acntbg-color font-secondary">Minimal Design, Maximum Impact</div>
-				<div class="box03 homeItem acntbg-color"><a class="font-secondary" href="#">Contact Us</a></div>
-				<div class="img02 homeItem border-primary"><img src="images/marketingCluster.jpg" alt="cubicle"></div>
-				<div class="img03 homeItem border-primary"><img src="images/planView.jpg" alt="planView"></div>
-				<div class="img04 homeItem border-primary"><img class="img-responsive" src="images/plans.jpg" alt="plans"></div>
-				<div class="box04 homeItem darkbg-color border-primary">
-					<h2><a class="font-secondary" href="#">joyce@ergobizdesign.com</a></h2>
-					<img class="divider" src="images/divider.png" alt="divider">
-					<h2 class="font-primary">(206) 999-3678</h2>
+			<div id="box02h" class="content"><h4>Minimal Design, Maximum Impact</h4></div>
+			<div id="box03h" class="content"><a href="#contact">Contact Us</a></div>
+			<div id="img02h" class="content"><img class="img-responsive" src="images/marketingCluster.jpg"
+												  alt="cubicle"></div>
+			<div id="img03h" class="content"><img class="img-responsive" src="images/planView.jpg" alt="planView"></div>
+			<div id="img04h" class="content"><img class="img-responsive" src="images/plans.jpg" alt="plans"></div>
+			<div id="box04h" class="content">
+				<h4><a href="mailto:info@ergobizdesign.com">info@ergobizdesign.com</a></h4>
+				<img class="pageDivider img-responsive" src="images/dividerSolid.png" alt="divider">
+				<h4><a href="tel:206-999-3678">cell: 206-999-3678</a></h4>
 				</div>
-				<div class="divider"><img src="images/dividerSolid.png" alt="divider"></div>
-			</div>		<!--	end home "page"	-->
-			<div id="about" class="content">		<!--	the about "page"	-->
-				
-			</div>		<!--	end about "page"	-->
-			<div id="inventory" class="content">		<!--	the inventory "page"	-->
-				
-			</div>		<!--	end inventory "page"	-->
-			<div id="contact" class="content">		<!--	the contact "page"	-->
-				
-			</div>		<!--	end contact "page"	-->
-			<div id="foot" class="content">		<!--	the footer bar	-->
-				
-			</div>		<!--	end footer bar	-->
-		</div>		<!--	end content container	-->
+			<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
+		</div>        <!--	end home content	-->
+	</div>        <!--	end home "page"	-->
+	<div id="about">        <!--	the about "page"	-->
+		<div id="box01a" class="info"><h2>About Ergo Business Design</h2></div>
+		<div id="box02a" class="info">
+			<p>You might expect an Interior Designer to be hanging drapes and wallpaper, but I love creating office
+				environments that help people enjoy their work.</p>
+			<p>The psychology of color and design, when employed well, can actually contribute to your bottom line by
+				stimulating people to work harder and more creatively. Isn't that what everyone wants when they furnish
+				an office?</p>
+			<p>We can create that great environment with less cost by recycling high-end office furniture, and we also
+				have access to beautiful new furniture at deep discounts, once again watching your bottom line.</p>
+			<p>Call for a free consultation!</p>
+		</div>
+		<div id="img01a" class="info"><img class="img-responsive" src="images/openOffice.jpeg" alt="openOffice"></div>
+		<div id="box03a" class="info"><h2>Our Team</h2></div>
+		<div id="img02a" class="info"><img class="img-responsive" src="images/dougJoyce.jpg" alt="d&j"></div>
+		<div id="img03a" class="info"><img class="img-responsive" src="images/officeMove.jpg" alt="move"></div>
+		<div id="img04a" class="info"><img class="img-responsive" src="images/largeInstall.jpg" alt="install"></div>
+		<div id="box04a" class="info">
+			<h3>Doug and Joyce Hawkinson</h3>
+			<p>Joyce</p>
+			<p>Since 1999 I've been helping people furnish their offices: used furniture or new, I've done the space
+				planning, improved lighting, supervised installation and whole-office moves, and helped businesses save
+				money. </p>
+		</div>
+		<div id="box05a" class="info">
+			<h3>Corporate Moves</h3>
+			<p>We manage your move from start to finish, allowing your people to continue doing the job that fits their
+				core strength. You do your job, and we'll handle the move.</p>
+	
+		</div>
+		<div id="box06a" class="info">
+			<h3>Installation</h3>
+			<p>Our crews are certified by the furniture manufacturers to ensure your furniture is installed correctly.
+				We work until you're satisfied.</p>
+		</div>
+		<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
+	</div>        <!--	end about "page"	-->
+	<div id="inventory">        <!--	the inventory "page"	-->
+		<div id="boxInvHead">
+			<h2>Product Available Now</h2>
+			<p>(If you don't see what you are looking for call us. If it is available we will get it for you.)</p>
+		</div>
+		<div id="inventoryContent" class="content">
+			<figure>
+				<img id="img-0" class="img-responsive cap-top" src="images/HMbenching.jpg" alt="benching">
+				<figcaption>HM Benching</figcaption>
+			</figure>
+			<figure>
+				<img id="img-1" class="img-responsive cap-top" src="images/HMcanvas57.jpg" alt="canvas">
+				<figcaption>HM Canvas 57</figcaption>
+			</figure>
+			<figure>
+				<img id="img-2" class="img-responsive cap-top" src="images/HMcanvas57glass.jpg" alt="canvasGlass">
+				<figcaption>HM Canvas 57 glass</figcaption>
+			</figure>
+			<figure>
+				<img id="img-3" class="img-responsive cap-top" src="images/HMcanvas57bullpen.jpg" alt="bullPen">
+				<figcaption>Canvas Bullpen</figcaption>
+			</figure>
+			<figure>
+				<img id="img-4" class="img-responsive cap-top" src="images/humanScaleTask.jpg" alt="humanScale Chairs">
+				<figcaption>HumanScale Chairs</figcaption>
+			</figure>
+			<figure>
+				<img id="img-5" class="img-responsive cap-top" src="images/brno01.jpg" alt="BRNO Chairs">
+				<figcaption>BRNO Chairs</figcaption>
+			</figure>
+		</div>    <!-- placeholder for inventory content built by JSON file  -->
+		<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
+		<div id="inventoryModal" class="modal fade"></div>        <!--	end inventory "page"	-->
+	</div>
+	<div id="contact">        <!--	the contact "page"	-->
+		<div class="box01c"><h2>Now Is A Good Time To Contact Us</h2></div>
+		<div class="box02c">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10433.447652662617!2d-122.32177228718794!3d47.768015530469114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1476141738662"
+					width="1200" height="500" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="box03c">
+			<p class="invitation">Contact us now! We will make a timely response, to set up a free consultation:</p>
+			<div id="contactBox">
+				<form id="email" action="mailto:info@ergobizdesign.com" method="post" enctype="text/plain">
+					<fieldset class="sender boxInfo">
+						<input type="text" name="name" placeholder="Full Name...">
+						<br>
+						<input type="email" name="email" placeholder="Email Address...">
+						<br>
+						<input type="tel" name="phone" placeholder="Phone...">
+						<br>
+					</fieldset>
+					<fieldset class="message boxInfo">
+						<textarea name="comment" required rows="4" cols="50" maxlength="500"
+								  placeholder="Comment (limit 500)..."></textarea>
+						<br>
+					</fieldset>
+					<fieldset class="buttons boxInfo">
+						<button type="reset" class="reset">Reset</button>
+						<button type="submit" class="submit">Send</button>
+					</fieldset>
+				</form>        <!--	end form	-->
+				<div id="ergoAddress">
+					<div class="street">2331 NE Perkins Way</div>
+					<div class="cityState">Lake Forest Park, WA</div>
+					<div class="zip">98155</div>
+					<div class="cell">cell: 206-999-3678</div>
+				</div>        <!--	end address	-->
+			</div>        <!--	end contact box	-->
+		</div>        <!--	end box03c	-->
+	</div>        <!--	end contact "page"	-->
+	<div id="footer">        <!--	the footer bar	-->
+		<div id="serviceMarking">
+			<div class="copyright bizInfo">&copy; 2016 Ergo Business Solutions, Inc. Release 1.0</div>
+			<div class="phoneEmail bizInfo"><a href="tel:206-999-3678">206-999-3678 |</a><a
+					href="mailto:info@ergobizdesign.com"> info@ergobizdesign.com</a></div>
+			<ul id="iconList" class="icons bizInfo">
+				<li class="twitter icon"><a href="https://twitter.com/joyhawkette"><img src="images/twitter.png"
+																						alt="twitter"
+																						style="width:25px;height:25px;"></a>
+				</li>
+				<li class="facebook icon"><a href="https://www.facebook.com/ergobizdesign/?fref=ts"><img
+						src="images/facebook.png" alt="facebook" style="width:25px;height:25px;"></a></li>
+				<li class="linkedin icon"><a href="https://www.linkedin.com/in/joyce-hawkinson-87a4422"><img
+						src="images/linkedin.png" alt="linkedin" style="width:25px;height:25px;"></a></li>
+			</ul>
+		</div>
+		<div id="credits">
+			<div class="author cred">handcrafted by: <a href="http://www.fivesolasdesign.com">fivesolasdesign | doug
+				hawkinson</a></div>
+			<div class="citation cred">This Font Software is licensed under the SIL Open Font License, Version 1.1</div>
+		</div>
+	</div>        <!--	end footer bar	-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!--<script type="text/javascript" src="js/json.js" charset="utf-8"></script>
-		<script type="text/javascript" src="js/main.js" charset="utf-8"></script>-->
+	<script type="text/javascript" src="js/json.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 	</body>
 </html>

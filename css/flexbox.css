@@ -1,21 +1,9 @@
+
 /**********************************************
     flexbox Structure - Primary (Vertical, Top to bottom)
 ***********************************************/
 
-#header { /*  the site container */
-    display: flex; /*  block display (100% of available)   */
-    flex-direction: row; /*  vertical main axis  */
-    flex-wrap: wrap; /*  no wrapping of columns  */
-    justify-content: space-around; /*  equal spacing around  content items */
-    align-items: center;
-    align-content: center;
-}
-
-#branding { /*  branding container */
-    flex: none;
-}
-
-#content { /*  content container   */
+#siteWrapper { /*  full site container   */
     display: flex; /*  block display (100% of available)   */
     flex-direction: column; /*  vertical main axis  */
     flex-wrap: nowrap; /*  no wrapping of columns  */
@@ -24,11 +12,47 @@
     align-content: center;
 }
 
-#home, /* home page container */
-#about, /* about page container */
-#inventory, /* inventory page container */
-#contact, /* contact page container */
-#foot { /* foot container (page quote and copyright) */
+/*          the secondary containers             */
+
+#homePage, /* home "page" container */
+#about, /* about "page" container */
+#inventory, /* inventory "page" container */
+#contact, /* contact "page" container */
+#footer { /* foot container (page quote and copyright) */
+    flex: none;
+}
+
+/**********************************************
+    home "page" container
+***********************************************/
+
+#homePage { /*  the container */
+    display: flex; /*  block display (100% of available)   */
+    flex-direction: column; /*  vertical main axis  */
+    flex-wrap: nowrap; /*  no wrapping of columns  */
+    justify-content: flex-start; /*  pressed to the top */
+    align-items: center;
+}
+
+#header, /*  header item */
+#homeContent { /*  content item */
+    flex: none;
+}
+
+/**********************************************
+    header container
+***********************************************/
+
+#header { /*  the container */
+    display: flex; /*  block display (100% of available)   */
+    flex-direction: column; /*  vertical main axis  */
+    flex-wrap: nowrap; /*  no wrapping of columns  */
+    justify-content: flex-start; /*  pressed to the top */
+    align-items: center;
+}
+
+#branding, /*  branding item */
+#navBar { /*  navigation item  */
     flex: none;
 }
 
@@ -56,8 +80,8 @@
     flexbox Structure - Navigation
 ***********************************************/
 
-/*#navBar {
-    display: inline-flex;
+.nav {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -65,42 +89,160 @@
 
 .navItem {
     flex: none;
-}*/
+}
 
 /**********************************************
     flexbox Structure - Home "page"
 ***********************************************/
 
-#home {
+#homeContent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+#img01h,
+#box01h,
+#box02h,
+#box03h,
+#img02h,
+#img03h,
+#img04h,
+#box04h {
+    flex: none;
+}
+
+/**********************************************
+    flexbox Structure - About "page"
+***********************************************/
+
+#about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 -10px;
 }
 
-.homeItem {
+.info {
     flex: none;
-    margin: 0 10px;
+}
+
+/**********************************************
+    flexbox Structure - Inventory "page"
+***********************************************/
+
+#inventory {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#inventoryContent {
+    flex: none;
+}
+
+#inventpryContent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.invtry {
+    flex: none;
+}
+
+/**********************************************
+    flexbox Structure - Contact "page"
+***********************************************/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box01c,
+.box02c,
+.box03c {
+    flex: none;
+}
+
+.box03c {
+    align-self: flex-start;
+}
+
+#contactBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#email,
+#ergoAddress {
+    flex: none;
+}
+
+#email {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.sender,
+.message,
+.buttons {
+    flex: none
 }
 
 /**********************************************
     flexbox Structure - Footer
 ***********************************************/
 
-.foot {
+#footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.copyright,
-.credits {
-    flex: 0 1 auto;
+#serviceMarking,
+#credits {
+    flex: none;
 }
 
-.credits {
+#serviceMarking {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright,
+.phoneEmail,
+.icons {
+    flex: none;
+}
+
+#iconList {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.twitter,
+.facebook,
+.linkedin {
+    flex: none;
+}
+
+#credits {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -108,6 +250,6 @@
 }
 
 .author,
-.annotation {
-    flex: 0 1 auto;
+.citation {
+    flex: none;
 }
