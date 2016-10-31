@@ -18,184 +18,262 @@
 		<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body id="home" data-spy="scroll" data-target="#navbar" class="siteWrapper"
-		  style="background-color: var(--hmlt-bkg-color);">
-	<div id="homePage">
-		<div id="header" style="background-color: var(--hmlt-bkg-color);">        <!--	the top	-->
-			<div id="branding">        <!--	the branding bar	-->
-				<div class="chair"><img class="img-responsive" src="images/office-chair.png" alt="brand"></div>
-				<div class="accentLine"><img class="img-responsive" src="images/accentLine.png" alt="accent"></div>
-				<div class="tagline"><h4>Offices that enhance the way you work</h4></div>
-				<div class="divider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
-			</div>        <!--	end branding bar	-->
-			<div id="navBar">        <!--	the nav bar	-->
-				<ul class="nav navbar-nav nav-inline">
-					<li class="active navItem home"><a href="#homePage">Home</a></li>
-					<li class="navItem about"><a href="#about">About</a></li>
-					<li class="navItem inventory"><a href="#inventory">Current Inventories</a></li>
-					<li class="navItem contact"><a href="#contact">Contact</a></li>
-				</ul>
-			</div>        <!--	end nav bar	-->
+	<body id="body" class="siteWrapper" style="background-color: var(--hmlt-bkg-color);">
+	<div id="homeHeader" class="page">
+		<nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-target="navbar-header"
+			 style="background-color: var(--hmac-bkg-color);">        <!--	the navbar		-->
+			<div class="container">        <!--	navigation container	-->
+				<header class="navbar-header">        <!--	navigation header	-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"
+							aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">        <!--	navigation brand	-->
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#home"><img class="img-responsive center-block chair"
+													 src="images/office-chair.png" alt="chair"></a>
+								<h4 class="text-center tag">Offices that enhance the way you work</h4>
+								<img class="img-responsive center-block accent" src="images/accent-line.png"
+									 alt="chair">
+								<h3 class="text-center bizName">Ergo Business Design</h3>
+							</div>
+						</div>
+					</div>        <!--	end navigation brand	-->
+					<div class="collapse navbar-collapse" id="collapse">    <!--	mobile collapse	-->
+						<ul class="nav nav-pills nav-justified">        <!--	the navigation list	-->
+							<li role="presentation" class="active home"><a href="#home">Home</a></li>
+							<li role="presentation" class="about"><a href="#about">About</a></li>
+							<li role="presentation" class="inventory"><a href="#inventory">Current Inventories</a></li>
+							<li role="presentation" class="contact"><a href="#contact">Contact</a></li>
+						</ul>        <!--	end navigation list	-->
+					</div>    <!--	end mobile collapse	-->
+				</header>        <!--	end navigation header	-->
+			</div>        <!--	end navigation container	-->
+		</nav>        <!--	end navbar		-->
+	</div>       <!--	end home-top	-->
+	<div class="siteContent container">
+		<div id="home" class="page">        <!--	the home page	-->
+			<div class="row">    <!--	row	-->
+				<div class="col-md-8">    <!--	column -->
+					<div id="imgInterraC"><img class="img-responsive" src="images/interraC.jpg" alt="fourPak"></div>
+				</div>    <!--	end column -->
+				<div class="col-md-4">
+					<div id="boxIntro">
+						<h3>Ergo Business Design</h3>
+						<p>The design of your office needs to communicate your brand and style while meeting the needs
+							of the people who work there. We are dedicated to learning how your business functions, then
+							designing a modern office space that works for you.</p>
+						<p>Ergo Business Design offers deep discounts on new and used office furniture, complete space
+							planning and installation services, as well as office moves.</p>
+						<p></p>
+						<p></p>
+						<p></p>
+						<img class="img-responsive" src="images/dividerSolid.png" alt="divider">
+						<p></p>
+						<div><h4><a href="#about">Learn more ></a></h4></div>
+					</div>    <!--	end column -->
+				</div>    <!--	end column -->
+				<div class="col-md-5">
+					<div id="boxMinimal"><h4>Minimal Design, Maximum Impact</h4></div>
+				</div>
+				<div class="col-md-3">
+					<div id="boxHomeContact"><a href="#contact">Contact Us</a></div>
+				</div>
+				<div class="col-md-4">
+					<div id="imgMktCluster"><img class="img-responsive" src="images/marketingCluster.jpg" alt="cubicle">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div id="imgPlanView"><img class="img-responsive" src="images/planView.jpg" alt="planView"></div>
+				</div>
+				<div class="col-md-4">
+					<div id="imgPlans"><img class="img-responsive" src="images/plans.jpg" alt="plans"></div>
+				</div>
+				<div class="col-md-4">
+					<div id="boxEmailPhone">
+						<h4><a href="mailto:info@ergobizdesign.com">info@ergobizdesign.com</a></h4>
+						<img class="pageDivider img-responsive" src="images/dividerSolid.png" alt="divider">
+						<h4><a href="tel:206-999-3678">cell: 206-999-3678</a></h4>
+					</div>
+				</div>
+			</div>    <!--	end row	-->
+			<div class="row">
+				<div class="col-xs-12">
+					<img class="img-responsive pageDivider" src="images/dividerSolid.png" alt="divider">
+				</div>
 			</div>
-		<div id="homeContent" class="content">        <!--	the home "page"	-->
-			<div id="img01h" class="content"><img class="img-responsive" src="images/interraC.jpg" alt="fourPak"></div>
-			<div id="box01h" class="content">
-				<h1>
-					<small>Ergo Business Solutions, Inc.</small>
-				</h1>
-					<p>The design of your office needs to communicate your brand and style while meeting the needs of the people who work there.  We are dedicated to learning how your business functions, then designing a modern office space that works for you.</p>
-					<p>Ergo Business Solutions offers deep discounts on new and used office furniture, complete space planning and installation services, as well as office moves.</p>
-					<p> </p>
-					<p> </p>
-					<p> </p>
-				<img class="img-responsive" src="images/dividerSolid.png" alt="divider">
-					<p> </p>
-				<div><h4><a href="#about">Learn more ></a></h4></div>
-				</div>
-			<div id="box02h" class="content"><h4>Minimal Design, Maximum Impact</h4></div>
-			<div id="box03h" class="content"><a href="#contact">Contact Us</a></div>
-			<div id="img02h" class="content"><img class="img-responsive" src="images/marketingCluster.jpg"
-												  alt="cubicle"></div>
-			<div id="img03h" class="content"><img class="img-responsive" src="images/planView.jpg" alt="planView"></div>
-			<div id="img04h" class="content"><img class="img-responsive" src="images/plans.jpg" alt="plans"></div>
-			<div id="box04h" class="content">
-				<h4><a href="mailto:info@ergobizdesign.com">info@ergobizdesign.com</a></h4>
-				<img class="pageDivider img-responsive" src="images/dividerSolid.png" alt="divider">
-				<h4><a href="tel:206-999-3678">cell: 206-999-3678</a></h4>
-				</div>
-			<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
-		</div>        <!--	end home content	-->
-	</div>        <!--	end home "page"	-->
-	<div id="about">        <!--	the about "page"	-->
-		<div id="box01a" class="info"><h2>About Ergo Business Design</h2></div>
-		<div id="box02a" class="info">
-			<p>You might expect an Interior Designer to be hanging drapes and wallpaper, but I love creating office
-				environments that help people enjoy their work.</p>
-			<p>The psychology of color and design, when employed well, can actually contribute to your bottom line by
-				stimulating people to work harder and more creatively. Isn't that what everyone wants when they furnish
-				an office?</p>
-			<p>We can create that great environment with less cost by recycling high-end office furniture, and we also
-				have access to beautiful new furniture at deep discounts, once again watching your bottom line.</p>
-			<p>Call for a free consultation!</p>
-		</div>
-		<div id="img01a" class="info"><img class="img-responsive" src="images/openOffice.jpeg" alt="openOffice"></div>
-		<div id="box03a" class="info"><h2>Our Team</h2></div>
-		<div id="img02a" class="info"><img class="img-responsive" src="images/dougJoyce.jpg" alt="d&j"></div>
-		<div id="img03a" class="info"><img class="img-responsive" src="images/officeMove.jpg" alt="move"></div>
-		<div id="img04a" class="info"><img class="img-responsive" src="images/largeInstall.jpg" alt="install"></div>
-		<div id="box04a" class="info">
-			<h3>Doug and Joyce Hawkinson</h3>
-			<p>Joyce</p>
-			<p>Since 1999 I've been helping people furnish their offices: used furniture or new, I've done the space
-				planning, improved lighting, supervised installation and whole-office moves, and helped businesses save
-				money. </p>
-		</div>
-		<div id="box05a" class="info">
-			<h3>Corporate Moves</h3>
-			<p>We manage your move from start to finish, allowing your people to continue doing the job that fits their
-				core strength. You do your job, and we'll handle the move.</p>
+		</div>        <!--	end home page	-->
 	
+		<div id="about" class="page">        <!--	the about page	-->
+			<div class="row">
+				<div id="bannerAbout" class="col-xs-12"><h2>About Ergo Business Design</h2></div>
+			</div>
+			<div class="row">
+				<div id="boxIntroAbout" class="col-md-5">
+					<p>You might expect an Interior Designer to be hanging drapes and wallpaper, but I love creating
+						office
+						environments that help people enjoy their work.</p>
+					<p>The psychology of color and design, when employed well, can actually contribute to your bottom
+						line by
+						stimulating people to work harder and more creatively. Isn't that what everyone wants when they
+						furnish
+						an office?</p>
+					<p>We can create that great environment with less cost by recycling high-end office furniture, and
+						we also
+						have access to beautiful new furniture at deep discounts, once again watching your bottom
+						line.</p>
+					<p>Call for a free consultation!</p>
+				</div>
+				<div id="imgOpenOffice" class="col-md-7"><img class="img-responsive" src="images/openOffice.jpeg"
+															  alt="openOffice"></div>
+			</div>
+			<div class="row">
+				<div id="bannerTeam" class="col-xs-12">
+					<h2>Our Team</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail joyceDoug">
+						<img class="img-responsive" src="images/dougJoyce.jpg" alt="d&j">
+						<div class="caption">
+							<h3>Joyce and Doug Hawkinson</h3>
+							<p>Joyce</p>
+							<p>Since 1999 I've been helping people furnish their offices: used furniture or new, I've
+								done the space
+								planning, improved lighting, supervised installation and whole-office moves, and helped
+								businesses save
+								money.</p>
+							<p>Doug</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail moves">
+						<img class="img-responsive" src="images/officeMove.jpg" alt="move">
+						<div class="caption">
+							<h3>Corporate Moves</h3>
+							<p>We manage your move from start to finish, allowing your people to continue doing the job
+								that fits their core strength.</p>
+							<p>You do your job, and we'll handle the move.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail installs">
+						<img class="img-responsive" src="images/largeInstall.jpg" alt="install">
+						<div class="caption">
+							<h3>Installation</h3>
+							<p>Our crews are certified by the furniture manufacturers to ensure your furniture is
+								installed correctly.</p>
+							<p>We work until you're satisfied.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive" src="images/dividerSolid.png" alt="divider">
+				</div>
+			</div>
+		</div>        <!--	end about page	-->
+	
+		<div id="inventory" class="page">        <!--	the inventory page	-->
+			<div class="row">
+				<div id="bannerInventory" class="col-xs-12">
+					<h2>Product Available Now</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div id="tagInventory" class="col-xs-12">
+					<h4 class="text-center">If you don't see what you are looking for, call us. If it is available we
+						will get it for you.</h4>
+				</div>
+			</div>
+			<!--		#inv-gallery & #inventory-modal will be appended here by Javascript		-->
+		</div>        <!--	end inventory page	-->
+	
+		<div id="contact" class="page">        <!--	the contact page	-->
+			<div class="row">
+				<div id="bannerContact" class="col-xs-12"><h2>Now Is A Good Time to Contact Us</h2></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="boxMap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10433.447652662617!2d-122.32177228718794!3d47.768015530469114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1476141738662"
+							width="1200" height="500" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="boxContact">
+					<p class="invitation">Contact us now! We will make a timely response, to set up a free
+						consultation:</p>
+					<div id="contactBox">
+						<form id="email" action="mailto:info@ergobizdesign.com" method="post" enctype="text/plain">
+							<fieldset class="sender boxInfo">
+								<input type="text" name="name" placeholder="Full Name...">
+								<br>
+								<input type="email" name="email" placeholder="Email Address...">
+								<br>
+								<input type="tel" name="phone" placeholder="Phone...">
+								<br>
+							</fieldset>
+							<fieldset class="message boxInfo">
+							<textarea name="comment" required rows="4" cols="50" maxlength="500"
+									  placeholder="Comment (limit 500)..."></textarea>
+								<br>
+							</fieldset>
+							<fieldset class="buttons boxInfo">
+								<button type="reset" class="reset">Reset</button>
+								<button type="submit" class="submit">Send</button>
+							</fieldset>
+						</form>        <!--	end form	-->
+						<div id="ergoAddress">
+							<div class="street">2331 NE Perkins Way</div>
+							<div class="cityState">Lake Forest Park, WA</div>
+							<div class="zip">98155</div>
+							<div class="cell">cell: 206-999-3678</div>
+						</div>        <!--	end address	-->
+					</div>        <!--	end contact box	-->
+				</div>        <!--	end box03c	-->
+			</div>    <!--	end row	-->
+		</div>        <!--	end contact page	-->
+	</div>        <!--	end container	-->
+	<div class="container-fluid" id="footer">    <!--	container-fluid	-->
+		<div class="row" id="ergoBiz">
+			<div class="col-md-4" id="copyright">
+				<p class="text-left">&copy; 2016 Ergo Business Design, Inc. Release 1.0</p>
+			</div>
+			<div class="col-md-4" id="phoneEmail">
+				<div class="text-center"><a href="tel:206-999-3678">206-999-3678 |</a><a
+						href="mailto:info@ergobizdesign.com"> info@ergobizdesign.com</a></div>
+			</div>
+			<div class="col-md-4" id="icons">
+				<ul id="iconList" class="text-right">
+					<li class="twitter icon"><a href="https://twitter.com/joyhawkette"><img src="images/twitter.png"
+																							alt="twitter"
+																							style="width:25px;height:25px;"></a>
+					</li>
+					<li class="facebook icon"><a href="https://www.facebook.com/ergobizdesign/?fref=ts"><img
+							src="images/facebook.png" alt="facebook" style="width:25px;height:25px;"></a></li>
+					<li class="linkedin icon"><a href="https://www.linkedin.com/in/joyce-hawkinson-87a4422"><img
+							src="images/linkedin.png" alt="linkedin" style="width:25px;height:25px;"></a></li>
+				</ul>
+			</div>
 		</div>
-		<div id="box06a" class="info">
-			<h3>Installation</h3>
-			<p>Our crews are certified by the furniture manufacturers to ensure your furniture is installed correctly.
-				We work until you're satisfied.</p>
+		<div class="row" id="credits">
+			<div class="col-md-6" id="author">
+				<p class="text-left">handcrafted by: <a href="http://www.fivesolasdesign.com">doug hawkinson |
+					fivesolasdesign</a></p>
+				</div>
+			<div class="col-md-6" id="citation">
+				<p class="text-right">This Font Software is licensed under the SIL Open Font License, Version 1.1</p>
+				</div>
 		</div>
-		<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
-	</div>        <!--	end about "page"	-->
-	<div id="inventory">        <!--	the inventory "page"	-->
-		<div id="boxInvHead">
-			<h2>Product Available Now</h2>
-			<p>(If you don't see what you are looking for call us. If it is available we will get it for you.)</p>
-		</div>
-		<div id="inventoryContent" class="content">
-			<figure>
-				<img id="img-0" class="img-responsive cap-top" src="images/HMbenching.jpg" alt="benching">
-				<figcaption>HM Benching</figcaption>
-			</figure>
-			<figure>
-				<img id="img-1" class="img-responsive cap-top" src="images/HMcanvas57.jpg" alt="canvas">
-				<figcaption>HM Canvas 57</figcaption>
-			</figure>
-			<figure>
-				<img id="img-2" class="img-responsive cap-top" src="images/HMcanvas57glass.jpg" alt="canvasGlass">
-				<figcaption>HM Canvas 57 glass</figcaption>
-			</figure>
-			<figure>
-				<img id="img-3" class="img-responsive cap-top" src="images/HMcanvas57bullpen.jpg" alt="bullPen">
-				<figcaption>Canvas Bullpen</figcaption>
-			</figure>
-			<figure>
-				<img id="img-4" class="img-responsive cap-top" src="images/humanScaleTask.jpg" alt="humanScale Chairs">
-				<figcaption>HumanScale Chairs</figcaption>
-			</figure>
-			<figure>
-				<img id="img-5" class="img-responsive cap-top" src="images/brno01.jpg" alt="BRNO Chairs">
-				<figcaption>BRNO Chairs</figcaption>
-			</figure>
-		</div>    <!-- placeholder for inventory content built by JSON file  -->
-		<div class="pageDivider"><img class="img-responsive" src="images/dividerSolid.png" alt="divider"></div>
-		<div id="inventoryModal" class="modal fade"></div>        <!--	end inventory "page"	-->
-	</div>
-	<div id="contact">        <!--	the contact "page"	-->
-		<div class="box01c"><h2>Now Is A Good Time To Contact Us</h2></div>
-		<div class="box02c">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10433.447652662617!2d-122.32177228718794!3d47.768015530469114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1476141738662"
-					width="1200" height="500" style="border:0" allowfullscreen></iframe>
-		</div>
-		<div class="box03c">
-			<p class="invitation">Contact us now! We will make a timely response, to set up a free consultation:</p>
-			<div id="contactBox">
-				<form id="email" action="mailto:info@ergobizdesign.com" method="post" enctype="text/plain">
-					<fieldset class="sender boxInfo">
-						<input type="text" name="name" placeholder="Full Name...">
-						<br>
-						<input type="email" name="email" placeholder="Email Address...">
-						<br>
-						<input type="tel" name="phone" placeholder="Phone...">
-						<br>
-					</fieldset>
-					<fieldset class="message boxInfo">
-						<textarea name="comment" required rows="4" cols="50" maxlength="500"
-								  placeholder="Comment (limit 500)..."></textarea>
-						<br>
-					</fieldset>
-					<fieldset class="buttons boxInfo">
-						<button type="reset" class="reset">Reset</button>
-						<button type="submit" class="submit">Send</button>
-					</fieldset>
-				</form>        <!--	end form	-->
-				<div id="ergoAddress">
-					<div class="street">2331 NE Perkins Way</div>
-					<div class="cityState">Lake Forest Park, WA</div>
-					<div class="zip">98155</div>
-					<div class="cell">cell: 206-999-3678</div>
-				</div>        <!--	end address	-->
-			</div>        <!--	end contact box	-->
-		</div>        <!--	end box03c	-->
-	</div>        <!--	end contact "page"	-->
-	<div id="footer">        <!--	the footer bar	-->
-		<div id="serviceMarking">
-			<div class="copyright bizInfo">&copy; 2016 Ergo Business Solutions, Inc. Release 1.0</div>
-			<div class="phoneEmail bizInfo"><a href="tel:206-999-3678">206-999-3678 |</a><a
-					href="mailto:info@ergobizdesign.com"> info@ergobizdesign.com</a></div>
-			<ul id="iconList" class="icons bizInfo">
-				<li class="twitter icon"><a href="https://twitter.com/joyhawkette"><img src="images/twitter.png"
-																						alt="twitter"
-																						style="width:25px;height:25px;"></a>
-				</li>
-				<li class="facebook icon"><a href="https://www.facebook.com/ergobizdesign/?fref=ts"><img
-						src="images/facebook.png" alt="facebook" style="width:25px;height:25px;"></a></li>
-				<li class="linkedin icon"><a href="https://www.linkedin.com/in/joyce-hawkinson-87a4422"><img
-						src="images/linkedin.png" alt="linkedin" style="width:25px;height:25px;"></a></li>
-			</ul>
-		</div>
-		<div id="credits">
-			<div class="author cred">handcrafted by: <a href="http://www.fivesolasdesign.com">fivesolasdesign | doug
-				hawkinson</a></div>
-			<div class="citation cred">This Font Software is licensed under the SIL Open Font License, Version 1.1</div>
-		</div>
-	</div>        <!--	end footer bar	-->
+	</div>    <!--	end container-fluid	-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->

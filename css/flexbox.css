@@ -1,159 +1,35 @@
 
 /**********************************************
-    flexbox Structure - Primary (Vertical, Top to bottom)
+    flexbox Structure - Primary (Vertical, Top to bottom) not used with Bootstrap
 ***********************************************/
-
-#siteWrapper { /*  full site container   */
-    display: flex; /*  block display (100% of available)   */
-    flex-direction: column; /*  vertical main axis  */
-    flex-wrap: nowrap; /*  no wrapping of columns  */
-    justify-content: space-around; /*  equal spacing around  content items */
-    align-items: center;
-    align-content: center;
-}
-
-/*          the secondary containers             */
-
-#homePage, /* home "page" container */
-#about, /* about "page" container */
-#inventory, /* inventory "page" container */
-#contact, /* contact "page" container */
-#footer { /* foot container (page quote and copyright) */
-    flex: none;
-}
 
 /**********************************************
-    home "page" container
+    home "page" container not used with Bootstrap
 ***********************************************/
-
-#homePage { /*  the container */
-    display: flex; /*  block display (100% of available)   */
-    flex-direction: column; /*  vertical main axis  */
-    flex-wrap: nowrap; /*  no wrapping of columns  */
-    justify-content: flex-start; /*  pressed to the top */
-    align-items: center;
-}
-
-#header, /*  header item */
-#homeContent { /*  content item */
-    flex: none;
-}
 
 /**********************************************
-    header container
+    header container not used with Bootstrap
 ***********************************************/
-
-#header { /*  the container */
-    display: flex; /*  block display (100% of available)   */
-    flex-direction: column; /*  vertical main axis  */
-    flex-wrap: nowrap; /*  no wrapping of columns  */
-    justify-content: flex-start; /*  pressed to the top */
-    align-items: center;
-}
-
-#branding, /*  branding item */
-#navBar { /*  navigation item  */
-    flex: none;
-}
 
 /**********************************************
-    flexbox Structure - Branding
+    flexbox Structure - Branding not used with Bootstrap
 ***********************************************/
-
-#branding {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.chair,
-.accentLine,
-.tagline,
-.divider {
-    flex: none;
-    text-align: center;
-}
 
 /**********************************************
-    flexbox Structure - Navigation
+    flexbox Structure - Navigation not used with Bootstrap
 ***********************************************/
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-.navItem {
-    flex: none;
-}
 
 /**********************************************
-    flexbox Structure - Home "page"
+    flexbox Structure - Home "page" not used with Bootstrap
 ***********************************************/
-
-#homeContent {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-around;
-}
-
-#img01h,
-#box01h,
-#box02h,
-#box03h,
-#img02h,
-#img03h,
-#img04h,
-#box04h {
-    flex: none;
-}
 
 /**********************************************
-    flexbox Structure - About "page"
+    flexbox Structure - About "page" not used with Bootstrap
 ***********************************************/
-
-#about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.info {
-    flex: none;
-}
 
 /**********************************************
     flexbox Structure - Inventory "page"
 ***********************************************/
-
-#inventory {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-
-#inventoryContent {
-    flex: none;
-}
-
-#inventpryContent {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.invtry {
-    flex: none;
-}
 
 /**********************************************
     flexbox Structure - Contact "page"
@@ -202,54 +78,5 @@
 }
 
 /**********************************************
-    flexbox Structure - Footer
+    flexbox Structure - Footer not used with Bootstrap
 ***********************************************/
-
-#footer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#serviceMarking,
-#credits {
-    flex: none;
-}
-
-#serviceMarking {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.copyright,
-.phoneEmail,
-.icons {
-    flex: none;
-}
-
-#iconList {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-}
-
-.twitter,
-.facebook,
-.linkedin {
-    flex: none;
-}
-
-#credits {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.author,
-.citation {
-    flex: none;
-}

@@ -1,13 +1,52 @@
 /* Global Layout Set-up */
 
+/*******************************************
+********************************************
+        Establish colors
+********************************************
+********************************************/
+
+:root {
+    --hmlt-bkg-color: #CFD8DC; /*  Google Material/Style/Color - Teal 100  --  home light bkg  */
+    --hmdk-bkg-color: #4DB6AC; /*  Google Material/Style/Color - Teal 300  --  home dark bkg  */
+    --hmac-bkg-color: #00897B; /*  Google Material/Style/Color - Teal 600  --  home accent bkg  */
+    --ablt-bkg-color: #CFD8DC; /*  Google Material/Style/Color - Cyan 100  --  about light bkg  */
+    --abdk-bkg-color: #4DD0E1; /*  Google Material/Style/Color - Cyan 300  --  about dark bkg  */
+    --abac-bkg-color: #00ACC1; /*  Google Material/Style/Color - Cyan 600  --  about accent bkg  */
+    --cilt-bkg-color: #CFD8DC; /*  Google Material/Style/Color - Indigo 100  --  inventory light bkg  */
+    --cidk-bkg-color: #7986CB; /*  Google Material/Style/Color - Indigo 300  --  inventory dark bkg  */
+    --ciac-bkg-color: #3949AB; /*  Google Material/Style/Color - Indigo 600  --  inventory accent bkg  */
+    --ciaa-bkg-color: rgba(26, 35, 126, 0.75); /*  Google Material/Style/Color - Indigo 900 (with .75 opacity)  --  inventory slide in captions  */
+    --crtf-bkg-color: rgb(33, 33, 33); /*  Google Material/Style/Color - Grey 900 (with full opacity)  --  inventory slide in captions  */
+    --crta-bkg-color: rgba(33, 33, 33, 0.75); /*  Google Material/Style/Color - Grey 900 (with .75 opacity)  --  inventory slide in captions  */
+    --mdlt-bkg-color: #F5F5F5; /*  Google Material/Style/Color - Grey 100  --  modal light bkg  */
+    --mddk-bkg-color: #E0E0E0; /*  Google Material/Style/Color - Grey 300  --  modal dark bkg  */
+    --mdac-bkg-color: #757575; /*  Google Material/Style/Color - Grey 600  --  modal accent bkg  */
+    --cnlt-bkg-color: #CFD8DC; /*  Google Material/Style/Color - Blue Grey 100  --  contact light bkg  */
+    --cndk-bkg-color: #90A4AE; /*  Google Material/Style/Color - Blue Grey 300  --  contact dark bkg  */
+    --cnac-bkg-color: #546E7A; /*  Google Material/Style/Color - Blue Grey 600  --  contact accent bkg  */
+    --mail-foc-color: #FFFFFF;
+    --brdr-pri-color: #FFFFFF;
+    --brdr-sec-color: #000000;
+    --brdr-act-color: #FFEB3B;
+    --brdr-eml-color: #5E97B0;
+    --font-pri-color: #000000;
+    --font-sec-color: #FFFFFF;
+    --font-ac1-color: #D84315;
+    --font-ac2-color: #F9A825;
+    --font-nav-color: #BDBDBD;
+    --bttn-sub-color: #4CAF50;
+    --bttn-res-color: #FDD835;
+    --navi-act-color: #FAFAFA; /*  Google Material/Style/Color - Grey 50  --  navigation active bkg  */
+}
+
 * {
     box-sizing: border-box;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+    position: relative; /*  needed for data-spy     */
 }
 
 .siteWrapper {
@@ -21,39 +60,11 @@ body {
 }
 
 .siteWrapper a:hover {
-    color: var(--font-act-color); /*  set all hyperlink text to accent font color - on hover */
+    color: var(--font-ac1-color); /*  set all hyperlink text to accent font color - on hover */
 }
 
-/*******************************************
-********************************************
-        Establish colors
-********************************************
-********************************************/
-
-:root {
-    --hmlt-bkg-color: #B2DFDB;
-    --hmdk-bkg-color: #4DB6AC;
-    --hmac-bkg-color: #004D40;
-    --ablt-bkg-color: #D7CCC8;
-    --abdk-bkg-color: #A1887F;
-    --abac-bkg-color: #3E2723;
-    --cilt-bkg-color: #FFE0B2;
-    --cidk-bkg-color: #FFB74D;
-    --ciac-bkg-color: #E65100;
-    --cnlt-bkg-color: #CFD8DC;
-    --cndk-bkg-color: #90A4AE;
-    --cnac-bkg-color: #263238;
-    --mail-foc-color: #FFFFFF;
-    --brdr-pri-color: #FFFFFF;
-    --brdr-sec-color: #000000;
-    --brdr-act-color: #FFEB3B;
-    --brdr-eml-color: #5E97B0;
-    --font-pri-color: #000000;
-    --font-sec-color: #FFFFFF;
-    --font-act-color: #D84315;
-    --font-nav-color: #BDBDBD;
-    --bttn-sub-color: #2E7D32;
-    --bttn-res-color: #FDD835;
+img {
+    max-width: 450px;
 }
 
 /*******************************************
@@ -62,16 +73,22 @@ body {
 ********************************************
 ********************************************/
 
-#header {
+.nav {
     font-family: 'Exo', sans-serif;
 }
 
-.tagline {
+.tag {
     font-family: 'Ubuntu Condensed', sans-serif;
+    color: var(--font-ac2-color);
 }
 
-.content {
+#homePage,
+#aboutPage,
+#inventoryPage,
+#contactPage,
+#footer {
     font-family: 'Play', sans-serif;
+    font-size: small;
 }
 
 h1 {
@@ -91,10 +108,8 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*  remove default underline from anchor tags   */
 }
-
-/*  remove default underline from anchor tags   */
 
 a, p {
     line-height: 1.25em;
@@ -104,326 +119,198 @@ a, p {
     End of Set Font Styles
 ********************************************/
 
-/*  positioning for scrollspy   */
+/*********************************************
+    branding & nav styling - highly customized for Bootstrap
+**********************************************/
+
+.navbar { /*  override Bootstrap  */
+    min-height: 0;
+    margin: 0;
+    border: none;
+}
+
+.navbar-inverse { /*  override Bootstrap  */
+    background-image: none;
+}
+
+ul.nav.nav-pills.nav-justified li.active a { /*  override Bootstrap  */
+    background-image: none;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    background-color: var(--navi-act-color);
+    color: var(--font-pri-color);
+}
+
+.nav-pills li a { /*  override Bootstrap  */
+    border-radius: 0;
+}
+
+.navbar-header { /*  override Bootstrap  */
+    float: none;
+}
+
+.navbar-header a img.chair { /*  override Bootstrap  */
+    padding-top: 3px;
+}
+
+.navbar-header h4.tag { /*  override Bootstrap  */
+    color: var(--font-ac2-color);
+    margin-bottom: 2px;
+}
+
+.navbar-header h3.bizName { /*  override Bootstrap  */
+    color: var(--font-pri-color);
+    margin-top: 2px;
+}
+
+.navbar-brand { /*  override Bootstrap  */
+    float: none;
+    height: 160px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*********************************************
+    common to all pages
+**********************************************/
 
 #home,
 #about,
 #inventory,
 #contact {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-/*********************************************
-    branding & nav styling
-**********************************************/
-
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 80%;
-    height: 20%;
-    margin: 0 10%;
-    padding: 0;
-}
-
-.chair {
-    padding-top: 1%;
-}
-
-.accentline {
-    width: 100%;
-    height: auto;
-}
-
-.divider {
-    width: 100%;
-    height: auto;
-    padding: 0;
-}
-
-.navbar-nav {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-nav li {
-    display: inline;
-    list-style-type: none;
-    text-decoration: none;
-    width: 20em;
-    text-align: center;
-}
-
-.nav li a {
-    padding: .5em 0;
-    color: var(--font-nav-color);
-}
-
-.nav li.active a {
-    color: var(--font-pri-color);
-}
-
-.nav li a:hover {
-    color: var(--font-act-color);
-}
-
-.home,
-.about,
-.inventory {
-    border-right: solid 2px var(--font-nav-color);
+    padding-top: 188px; /*   padding for nav branding     */
 }
 
 /*********************************************
     home page
 **********************************************/
 
-#homePage,
-#about,
-#inventory,
-#contact,
-#footer {
-    position: relative;
-    margin: 0 10%;
-    width: 80%;
+#boxBannerHome {
+    height: 60px;
+    background-color: var(--hmac-bkg-color);
 }
 
-#homePage {
-    padding-top: 12%;
-}
-
-#img01h {
-    width: 65%;
-    height: 40%;
+#imgInterraC {
     object-position: center;
     object-fit: cover;
     border: 2px solid var(--brdr-pri-color);
 }
 
-#box01h {
-    width: 35%;
-    height: 275px;
-    padding: .5% 1.5%;
+#boxIntro {
+    padding: .5em 1em;
     background-color: var(--hmdk-bkg-color);
-    border: 2px solid var(--brdr-pri-color);
     color: var(--font-pri-color);
+    border: 2px solid var(--brdr-pri-color);
 }
 
-#box01h h1 small {
+#boxIntro h3 {
     color: var(--font-sec-color);
 }
 
-#box01h h4 a {
+#boxIntro h4 a {
     color: var(--font-sec-color);
 }
 
-#box02h {
-    width: 50%;
-    height: 10%;
+#boxMinimal,
+#boxHomeContact {
     text-align: center;
-    background-color: var(--hmac-bkg-color);
-    border-right: 2px solid var(--brdr-pri-color);
+    background-color: var(--hmdk-bkg-color);
     color: var(--font-sec-color);
+    border: 2px solid var(--brdr-pri-color);
+    margin-top: -0.85em;
+    padding: 24px 0;
+}
+
+#boxMinimal {
+    padding: 1em 0;
+}
+
+#boxContact {
+    padding: 1.74em 0;
+}
+
+#imgMktCluster {
     padding: 0;
-}
-
-#box03h {
-    width: 15%;
-    height: 10%;
-    text-align: center;
-    background-color: var(--hmac-bkg-color);
-    margin: 0;
-    padding: .825% 0;
-}
-
-#img02h {
-    width: 35%;
-    height: 300px;
-    padding: 0;
-    margin-top: -5%;
+    margin-top: -80px;
     overflow: hidden;
     border: 2px solid var(--brdr-pri-color);
 }
 
-#img03h {
-    width: 30%;
-    height: 200px;
-    margin-top: -18.05%;
-    overflow: hidden;
+#imgPlanView {
+    margin-top: -303px;
+}
+
+#imgPlans {
+    margin-top: -205px;
     border: 2px solid var(--brdr-pri-color);
 }
 
-#img04h {
-    width: 35%;
-    height: 291px;
-    margin-top: -18.1%;
-    overflow: hidden;
-    border: 2px solid var(--brdr-pri-color);
-}
-
-#box04h {
-    width: 35%;
-    height: 86px;
-    margin: 0;
+#boxEmailPhone {
+    margin-top: -12px;
     text-align: center;
     background-color: var(--hmdk-bkg-color);
     border: 2px solid var(--brdr-pri-color);
     color: var(--font-pri-color);
 }
 
-#box04h a {
+#boxEmailPhone a {
     color: var(--font-sec-color);
     padding: .25% 0 .3% 0;
 }
 
-#box04h a:hover {
-    color: var(--font-act-color);
+#boxEmailPhone a:hover {
+    color: var(--font-ac1-color);
 }
 
-.pageDivider {
-    width: 100%;
-    height: auto;
-    padding: 1% 0;
-}
 
 /*********************************************
     about page
 **********************************************/
 
-#about {
-    position: relative;
-}
-
-#box01a {
-    width: 100%;
-    height: 10%;
+#bannerAbout {
     margin: 0;
     padding: 0;
-    background-color: var(--hmac-bkg-color);
-    border: 2px solid var(--hmac-bkg-color);
+    background-color: var(--abac-bkg-color);
     color: var(--font-sec-color);
     text-align: center;
 }
 
-#box02a {
-    width: 30%;
-    height: 330px;
-    padding: 2.9% 1.5%;
+#boxIntroAbout {
     margin: 0;
-    background-color: var(--hmdk-bkg-color);
+    background-color: var(--abdk-bkg-color);
     border: 2px solid var(--brdr-pri-color);
     color: var(--font-pri-color);
+    padding: 2.8em;
 }
 
-#img01a {
-    width: 70%;
-    height: 330px;
+#imgOpenOffice {
     object-position: center;
     object-fit: cover;
     overflow: hidden;
     border: 2px solid var(--brdr-pri-color);
 }
 
-#box03a {
-    width: 100%;
-    height: 10%;
-    margin: 0;
-    padding: 0 0 .5em;
-    background-color: var(--hmlt-bkg-color);
-    color: var(--font-pri-color);
+#bannerTeam {
     text-align: center;
-}
-
-#img02a {
-    width: 25%;
-    height: 215px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    border: 2px solid var(--brdr-pri-color);
-}
-
-#img03a {
-    width: 25%;
-    height: 215px;
-    padding: 0 0 .5em;
-    margin: 0;
-    overflow: hidden;
-    border: 2px solid var(--brdr-pri-color);
-}
-
-#img04a {
-    width: 25%;
-    height: 215px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    border: 2px solid var(--brdr-pri-color);
-}
-
-#box04a {
-    width: 25%;
-    height: 215px;
-    padding: 1% 1.5%;
-    margin: 0 5% 0 0;
-    overflow: scroll;
-    background-color: var(--hmdk-bkg-color);
-    border: 2px solid var(--brdr-pri-color);
-    color: var(--font-pri-color);
-}
-
-#box05a {
-    width: 25%;
-    height: 215px;
-    padding: 1% 1.5%;
-    margin: 0 0 0 -5%;
-    overflow: scroll;
-    background-color: var(--hmdk-bkg-color);
-    border: 2px solid var(--brdr-pri-color);
-    color: var(--font-pri-color);
-}
-
-#box06a {
-    width: 25%;
-    height: 215px;
-    padding: 1% 1.5%;
-    margin: 0;
-    overflow: scroll;
-    background-color: var(--hmdk-bkg-color);
-    border: 2px solid var(--brdr-pri-color);
-    color: var(--font-pri-color);
-}
-
-#box04a h3,
-#box05a h3,
-#box06a h3 {
-    color: var(--font-sec-color);
 }
 
 /*********************************************
     inventory page
 **********************************************/
 
-#boxInvHead {
-    width: 100%;
-    height: 10%;
+#bannerInventory {
     margin: 0;
     padding: 0;
-    background-color: var(--hmac-bkg-color);
-    border: 2px solid var(--brdr-sec-color);
+    background-color: var(--ciac-bkg-color);
     color: var(--font-sec-color);
     text-align: center;
 }
 
 figure img {
-    width: 274px;
-    height: 274px;
     overflow: hidden;
     padding: 2%;
-    background-color: var(--hmdk-bkg-color);
+    background-color: var(--cidk-bkg-color);
     border: solid 1px var(--brdr-pri-color);
     margin: 0;
 }
@@ -444,7 +331,6 @@ figcaption {
     padding: 1% 4%;
     opacity: 0;
     top: 0;
-    /*left: -30%;*/
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
@@ -463,8 +349,8 @@ figure:before {
     content: "?";
     position: absolute;
     font-weight: 800;
-    /*background: var(--ciac-bkg-color);*/
-    background: rgba(230, 81, 0, 0.75);
+    background: var(--ciac-bkg-color);
+    background: var(--ciaa-bkg-color);
     text-shadow: 0 0 5px grey;
     color: var(--font-sec-color);
     width: 24px;
@@ -497,31 +383,117 @@ figure:hover:before {
     top: 0;
 }
 
+/**********************************************
+    modal styling
+**********************************************/
+
+/* The Modal (background) */
+
+.modal-dialog {
+    z-index: 2000; /* Sit on top */
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -300px;
+    overflow: auto; /* Enable scroll if needed */
+    padding: 1%;
+    background: var(--mdlt-bkg-color);
+    border-width: 5px;
+    border-style: outset;
+    border-left: var(--mdac-bkg-color);
+    border-top: var(--mdac-bkg-color);
+    border-right: var(--mddk-bkg-color);
+    border-bottom: var(--mddk-bkg-color);
+    opacity: 1;
+}
+
+.modal-header {
+    display: inline-block;
+    text-align: left;
+}
+
+.modal-header button {
+    text-align: right;
+    margin-bottom: 2%;
+}
+
+.modal-body img.primaryPic {
+    display: block;
+    border: solid 2px var(--brdr-pri-color);
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+
+.secContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondaryPic {
+    flex: none;
+}
+
+.secContainer img {
+    display: inline-block;
+}
+
+.secContainer img:hover {
+    -ms-transform: scale(4, 4); /* IE 9 */
+    -webkit-transform: scale(4, 4); /* Chrome, Safari, Opera */
+    transform: scale(4, 4);
+}
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #F44336;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: #1B5E20;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-footer {
+    text-align: left; /*  override the default right alignment */
+}
+
+/**********************************************
+    end of modal styling
+**********************************************/
+
 /*********************************************
     contact page
 **********************************************/
 
-.box01c {
-    width: 100%;
-    height: 7.5%;
-    background-color: var(--hmac-bkg-color);
-    border: 2px solid var(--hmac-bkg-color);
+#bannerContact {
+    margin: 0;
+    padding: 0 auto;
+    background-color: var(--cnac-bkg-color);
     color: var(--font-sec-color);
     text-align: center;
-    padding-bottom: 1%;
 }
 
-.box02c {
-    width: 100%;
-    height: 350px;
+#boxMap {
+    padding: 0;
+    margin: 0;
     overflow: hidden;
     border: 2px solid var(--font-nav-color);
 }
 
-.box03c {
-    width: 100%;
-    height: 150px;
-    padding: 1%;
+#boxContact {
+    padding: 9px;
     background-color: var(--cndk-bkg-color);
     color: var(--font-sec-color);
     border: 2px solid var(--brdr-pri-color);
@@ -532,20 +504,11 @@ figure:hover:before {
     text-align: left;
 }
 
-#email {
-    width: 70%;
-}
-
-#ergoAddress {
-    width: 30%;
-    padding-left: 10%;
-}
-
 input,
 textarea {
     font-size: 1em;
     font-weight: 500;
-    background: linear-gradient(to top left, #A3C0CD, #C1DEEB);
+    background: linear-gradient(to bottom right, #ECEFF1, #B0BEC5);
     border: 1px solid #C1DEEB;
     text-overflow: "";
     padding: 5px;
@@ -587,29 +550,19 @@ button, input, select, textarea {
 
 }
 
+#ergoAddress {
+    padding-right: 10em;
+}
+
 /**********************************************
     footer
 ***********************************************/
 
 #footer {
     position: relative;
-    padding-top: 2.5%;
-}
-
-#serviceMarking {
-    width: 100%;
-}
-
-.bizInfo {
-    width: 33.33%;
-}
-
-.copyright {
-    text-align: left;
-}
-
-.phoneEmail {
-    text-align: center;
+    margin-top: 3%;
+    padding: 3px 5px;
+    background-color: var(--cndk-bkg-color);
 }
 
 ul#iconList {
@@ -628,22 +581,13 @@ li.linkedin {
     padding-left: 5%;
 }
 
+#ergoBiz,
 #credits {
-    width: 100%;
+    padding: 0 15px;
+}
+
+#credits {
     font-size: 75%;
-    padding-bottom: 2.5%;
-}
-
-.cred {
-    width: 50%;
-}
-
-.author {
-    text-align: left;
-}
-
-.citation {
-    text-align: right;
 }
 
 /*******************************************
