@@ -16,38 +16,43 @@ Site Structure: Single Page with navigable segments for:
     Contact page
     
 NAV/BRANDING
-        Fixed to top. Branding above Navigation. Website slides under the Nav/Branding.
-        Branding - Image and Tagline
-        Navigation - equidistant "pills". Navigate by clicking or scrolling
-            Theme changes by page
+
+Fixed to top. Branding above Navigation. Website slides under the Nav/Branding.
+Branding - Image and Tagline
+Navigation - equidistant "pills". Navigate by clicking or scrolling
+    Theme changes by page
 
 HOME
-    	Primarily an industry introduction page.
-    	Minimal text.
-    	Maximal Images.
-    	Teal Theme
+
+Primarily an industry introduction page.
+Minimal text.
+Maximal Images.
+Teal Theme
     	
 ABOUT
-        Business Introductory page
-        Segments:
-            General
-                Brief overview of Company
-            Staff
-                Short bios of principals
-            Moves
-                Description of office move services
-            Installations
-                Descrption of Installation service
+
+Business Introductory page
+Segments:
+    General
+        Brief overview of Company
+    Staff
+        Short bios of principals
+    Moves
+        Description of office move services
+    Installations
+        Descrption of Installation service
 
 INVENTORIES
-      Gallery of photos of Currently available furniture Inventories.
-      Each Gallery photo is clickable
-        On Click - a popup modal appears with further details on inventory
-      
-      Dynamic content. Picture with text. Easily updateable. 
+
+Gallery of photos of Currently available furniture Inventories.
+Each Gallery photo is clickable
+On Click - a popup modal appears with further details on inventory
+
+* Dynamic content. Pictures with text. Easily updateable by user. 
       
       
 CONTACT US
+
 * Embedded Google map of Company Neighborhood
 * Operable Email Form
 * Clickable:
