@@ -48,10 +48,10 @@ INVENTORIES
       
       
 CONTACT US
-      Embedded Google map of Company Neighborhood
-      Operable Email Form
-      Clickable:
-            Phone Number
-            Facebook Link
-            LinkedIn Link
-            Twitter Link
+* Embedded Google map of Company Neighborhood
+* Operable Email Form
+* Clickable:
+    * Phone Number
+    * Facebook Link
+    * LinkedIn Link
+    * Twitter Link
