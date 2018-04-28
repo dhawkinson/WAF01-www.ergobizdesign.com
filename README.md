@@ -1,5 +1,8 @@
+# ergobizdesign.com
+
 A Commercial Website
-Built for a client,Ergo Business Solutions (dba ergobizdesign)
+
+Built for a client, Ergo Business Solutions (dba ergobizdesign)
 
 Industry: Used Office Furniture (Liquidations, Wholesale and Retail Sales, Space Planning)
 Location: Greater Seattle
